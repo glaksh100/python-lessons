@@ -1,0 +1,73 @@
+Possible handout material:
+http://uiuc-cse.github.io/2014-01-30-cse/lessons/ref/python.html
+
+Section 1: Programming Languages
+
+- Why do we use Programming Languages?
+	Example of automation - think of something 
+- Time to solution 
+	Human
+	Machine Time
+- Python reduces Human Time, FORTRAN reduces Machine time
+- Why Python?
+	Free
+	Cross Platform
+	Well documented
+	Widely used
+	Great visualization - Example of visualization
+
+Section 2: Strings, Numbers and Variables
+
+- Set up Canopy, Use cmd , Get into Python
+
+- Numbers
+	Example of implicit datatyping 
+	/ % **
+- Strings
+	'can\'t' 
+	"can't"
+	print r (to escape)
+	'ba' + 2*'na' (string concat)
+- Variables:
+	No need to use datatype
+	Slicing of strings
+	
+Section 3: Conditionals and loops
+- Logical and arithmetic operators
+	< > <= >= ! !=
+- if , elif, if else, 
+	Example
+- Loops
+	 while
+	 Factorial/ Fibonacci - exercise?
+
+Section 4: Functions/Libraries
+- Why?
+	Modular
+	Reusable
+- Example
+- Libraries
+	Inbuilt:  math, sys?
+	Every Python file can be used as a library
+		Example
+
+Section 5: Sequences: Lists and Tuples
+
+- Lists [] - 
+	Heterogenous
+	Slicing lists
+	Append
+	Len
+	mutable
+	Delete entries
+	Useful list methods:
+		.count()
+		.index()
+		.insert()
+		in "list" to check membership
+- Tuples ()
+	Immutable
+	Heterogenous
+	Enumerate
+
+	Example
