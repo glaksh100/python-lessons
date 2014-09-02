@@ -23,11 +23,13 @@ If you were to use *C*, you’d be punching in these few lines here:
     }
 
 *Fortran* would be less intuitive and more ludicrous and make you type:
+
     program hello
         print *, "Hello World!"
     end program hello
 
 While, with *Python*, you just have to say :
+
     print "Hello World!"
 
 We can clearly see, Python reduces a lot of human time. Apart from doing that, it is:
@@ -137,6 +139,7 @@ Some properties of lists:
 
 ### **Exercise 2**
 Try the following:
+
     myfirstlist.append(5)
     myfirstlist.insert(1,5)
     myfirstlist.sort()
@@ -243,11 +246,13 @@ Each of these libraries have a number of modules or functions.
 Apart from the standard functions, we can declare user defined functions too.
 
 The structure of a new function is: 
+
     def function_name(input arguments):
         function defintion
         return output
 
 **Example:**
+
     def areaSquare(a):
         return a**2
 
