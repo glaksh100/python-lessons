@@ -1,0 +1,295 @@
+**Introduction**
+Start with the graphing calculator
+https://www.desmos.com/calculator
+
+What have you actually been doing here? Programming!
+
+We use programming in a small way everyday. Saves time. Automates processes - EXAMPLE HERE!!!
+http://www.jeffpalm.com/fox/fox.jpg
+
+Programming languages - C, C++, FORTRAN, Java, Python, MATLAB. Way too many, so why did we choose python ?
+
+**Example 1: Hello World**
+Let's start with the A,B,C.. of programmin aka Hello World.
+
+C:
+#include<stdio.h>
+
+main()
+{
+    printf("Hello World");
+
+}
+
+Fortran:
+program hello
+          print *, "Hello World!"
+       end program hello
+
+Python: 
+print "Hello World!"
+
+Which brings us to why python?
+
+Reduces a lot of human time(high level programming language)
+Free
+Widely used
+Well documented
+Great for visualization - EXAMPLE HERE!!!
+
+http://xkcd.com/353/
+
+Now that we have convinced ourselves that studying Python is not a waste of time, let's get started!
+
+**Numbers, Strings and Variables**
+
+Numbers:
+Python can easily substitute your calculator to help do basic math!
+
+**Examples**
+
+17+4
+
+10*6
+
+9 - 9
+
+2**5
+
+17/4 
+
+
+**Strings**
+"Go Illini"
+
+Can also be 'Go Illini'
+
+
+Well you could also say that as "Go" + "Illini", string concatenation made the easiest
+
+**Variables**
+
+Variables form the spine of any program.  They are different from the algebra world in the sense that you don't need to find an "x" 
+here.(?)
+
+x=3
+x= "It is too early in the morning"
+
+
+The point here to note is that x does not need a pre-defined data type. 
+
+Note: Difference between a variable and a string. I can have a variable new="new".
+
+**Floating point - binary representation**
+DO THIS HERE???
+
+**Exercise 1**
+
+1. What is the difference between 17/4 and 17/4.0?
+2. Print "It's too early in the morning"
+3. Using the numbers 4 and 6 the math operations: +, -, *, / print the number 8.
+4. Print the number 102
+
+**Built-in types**
+
+Booleans are either True or False.
+Numbers can be integers (1 and 2), floats (1.1 and 1.2), fractions (1/2 and 2/3), or even complex numbers.
+Strings are sequences of Unicode characters, e.g. an html document.
+Bytes and byte arrays, e.g. a jpeg image file.
+Lists are ordered sequences of values.
+Tuples are ordered, immutable sequences of values.
+Sets are unordered bags of values.
+Dictionaries are unordered bags of key-value pairs.
+
+We talked about Numbers and Strings, now let's have a look at some of the other commonly used ones:
+
+Booleans:
+
+Can either be True of False
+
+x=True
+
+print x
+
+x=False
+
+print x
+
+Reverse it, print not x
+
+Q: Can you print True without assigning it to x? i.e. using any other operators? 
+
+**Aside: Comparison operators**
+
+6> 4 - True
+
+6<4 - False
+
+a=3
+b=3.0
+
+a==b #True
+
+
+
+**Lists**
+From strings and numbers we are now moving to more compound datatypes. 
+
+Lists in python are written as csv within square brackets.
+
+myfirstlist= [1,2,3,4]
+
+Some properties of lists:
+
+1. Heterogenous:
+
+myfirstlist=[1,2,"apple",3]
+
+2. Can be sliced and indexed
+
+myfirstlist[0]=1
+myfirstlist[-1]=3
+myfirstlist[-3:]=[2,"apple",3]
+
+3. Lists are mutable
+myfirstlist[0]="orange"
+
+**Exercise 2**
+Try the following:
+myfirstlist.append(5)
+myfirstlist.insert(1,5)
+myfirstlist.sort()
+myfirstlist.reverse()
+myfirstlist.count(5)
+myfirstlist.remove(5)
+
+
+
+**Tuples**
+A tuple consists of a number of values separated by commas, for instance:
+
+myfirsttuple=(1,2,"apple",3)
+
+Similar to lists in most ways:
+
+But try,
+
+myfirsttuple[0]="orange"
+
+So, tuples are _____________?
+
+Immutable!
+
+**Dictionaries**
+
+PUT STUFF HERE!!!
+
+
+**Conditionals and Loops**
+
+So we now know variables, built in data types and comparison operators. So what do we do with all of this? We need to structure this 
+into a program for which we need to understand conditionals and loops.To write a structured program, we need to be writing a Python
+script.
+
+**Writing a Python script**
+
+All this while we were using the interactive Python interface. Now we will move on to writing Python scripts.
+
+To write a Python script, we need an editor
+
+Open editor
+
+Write 
+print "This is a Python Script"
+Save as pythonscript.py
+
+Run from command line
+
+**Conditionals**
+Lesson1_ifelse.py
+
+**Exercise 3**
+
+Write a Python script to check if a number is even or odd or zero.
+
+**Loops**
+while -???
+
+Why do we need loops?
+
+There are many instances where you need to run the same lines of code several times, and loops come in handy in such cases.
+
+Example:
+
+Factorials:
+
+n!= n* (n-1)*....1
+5!=5*4*3*2*1
+
+If we did not use loops we would need to write the same multiplication code 5 times. 
+
+Lesson1_factorial.py
+
+**Exercise 4**
+
+Write a Python script to check if a Number is prime or not.
+
+Note: A prime number is one which has only 2 factors - 1 and the number itself.
+
+**Looping through lists**
+
+Accessing and using lists is intrinsically linked to loops. For instance,
+
+mylist=[1,2,3,4]
+
+for i in range(1,4):
+    print i, mylist[i]
+    
+
+
+**Functions and Libraries**
+
+Python has quite a few built in standard libraries.
+
+To name a few:
+
+math
+scipy
+numpy
+
+Each of these libraries have a number of modules or functions 
+
+Example: math.sqrt to find the square root
+import math
+print math.sqrt(9)
+
+Apart from the standard functions, we can declare user defined functions too
+
+Structure of the function is - 
+
+def function_name(input arguments):
+    function defintion
+    return output
+
+
+**Exercise 5**
+
+Modify the previous exercise(to check for a prime number), to a a function.
+
+
+Each Python file can in turn be used as a library, where you import the Python file and function you need
+
+**Exercise 6: the big one**
+
+Using the file which stores the Prime Number function, create a new Python script, where you declare a list of numbers and loop 
+through the numbers in the list to count the number of Prime numbers.
+
+
+
+
+ 
+
+
+
+
+
